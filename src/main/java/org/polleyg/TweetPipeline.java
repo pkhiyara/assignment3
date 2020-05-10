@@ -24,7 +24,7 @@ import static org.apache.beam.sdk.io.gcp.bigquery.BigQueryIO.Write.WriteDisposit
  */
 public class TweetPipeline {
     private static final String TOPIC = "projects/assignment3-276800/topics/assignment3";
-    private static final String BIGQUERY_DESTINATION = "%s:twitter.tweets";
+    private static final String BIGQUERY_DESTINATION = "assignment3-276800:twitter.tweets";
 
     public static void main(String[] args) {
         PipelineOptionsFactory.register(DataflowPipelineOptions.class);
